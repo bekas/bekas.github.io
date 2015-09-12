@@ -11,4 +11,14 @@
 .menu li.active a{
   border-radius: 0;
   background-color: lightgoldenrodyellow;
+  color: black;
+}
+
+.menu li.active a:hover{
+  border-radius: 0;
+  background-color: lightgoldenrodyellow;
+}
+
+.menu li a:hover{
+  border-radius: 0;
 }
