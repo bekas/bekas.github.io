@@ -1,9 +1,13 @@
 .header {
-  padding:20px 5px;
+  padding:5px 25px 10px;
   background-color: darkseagreen;
   
 }
 
+.panel{
+  border:0px;
+  
+}
 .header a{
   text-decoration: none;
 }
