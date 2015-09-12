@@ -24,7 +24,7 @@
   border-radius: 0;
 }
 
-div.panel.theme .panel-heading{
+div.panel.theme>.panel-heading{
   background-color: lightsteelblue;
   color: black;
   
