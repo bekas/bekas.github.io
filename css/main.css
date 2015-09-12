@@ -1,6 +1,6 @@
 .header {
   padding:20px;
-  background-color: lightgoldenrodyellow;
+  background-color: darkseagreen;
   
 }
 
@@ -10,13 +10,13 @@
 
 .menu li.active a{
   border-radius: 0;
-  background-color: lightgoldenrodyellow;
+  background-color: darkseagreen;
   color: black;
 }
 
 .menu li.active a:hover{
   border-radius: 0;
-  background-color: lightgoldenrodyellow;
+  background-color: darkseagreen;
   color: black;
 }
 
@@ -24,8 +24,8 @@
   border-radius: 0;
 }
 
-div.panel.theme .panel-heading{
-  background-color: lightsteelblue;
+div.panel.theme>.panel-heading{
+  background-color: darkseagreen;
   color: black;
   background-image: none;
   border-radius: 0;
