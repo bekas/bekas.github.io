@@ -23,3 +23,9 @@
 .menu li a:hover{
   border-radius: 0;
 }
+
+div.panel.theme .panel-heading{
+  background-color: lightsteelblue;
+  color: black;
+  
+}
