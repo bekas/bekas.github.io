@@ -8,7 +8,7 @@
   text-decoration: none;
 }
 
-.menu li.active{
-  
+.menu li.active a{
+  border-radius: 0;
   background-color: lightgoldenrodyellow;
 }
