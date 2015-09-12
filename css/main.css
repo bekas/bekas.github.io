@@ -17,6 +17,7 @@
 .menu li.active a:hover{
   border-radius: 0;
   background-color: lightgoldenrodyellow;
+  color: black;
 }
 
 .menu li a:hover{
