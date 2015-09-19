@@ -1,27 +1,48 @@
 <head>
-  <!-- Latest compiled and minified CSS -->
+   <!--
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-  <!-- Optional theme -->
+  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-  <!-- Latest compiled and minified JavaScript -->
+  
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  -->
+  <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.indigo-pink.min.css">
+<script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   
   <link rel="stylesheet" href="/css/main.css"/>
 </head>
 <body>
-   <ul class="nav nav-pills nav-justified menu">
-      <li role="presentation"><a href="/">Главная</a></li>
-      <li role="presentation" class="active"><a href="/html/web.html">Спецкурс по веб-разработке</a></li>
-      <li role="presentation"><a href="/html/web.html">С</a></li>
-      <li role="presentation"><a href="/html/web.html">Обо мне</a></li>
-    </ul>
-  <div class="header">
-    <h1>bekas</h1>
-    <small>страница Дениса Бекасова</small>
+  <!-- Always shows a header, even in smaller screens. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">bekasov</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation. We hide it in small screens. -->
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+        <a class="mdl-navigation__link" href="/">Главная</a>
+        <a class="mdl-navigation__link" href="/html/web.html">Спецкурс по веб-разработке</a>
+        <a class="mdl-navigation__link" href="/">С</a>
+        <a class="mdl-navigation__link" href="/">Обо мне</a>
+      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">bekasov</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="/">Главная</a>
+      <a class="mdl-navigation__link" href="/html/web.html">Спецкурс по веб-разработке</a>
+      <a class="mdl-navigation__link" href="/html/web.html">С</a>
+      <a class="mdl-navigation__link" href="/html/web.html">Обо мне</a>
+    </nav>
   </div>
-
-
-<div class="panel panel-default theme">
+  <main class="mdl-layout__content">
+    <div class="page-content">
+      
+      <div class="panel panel-default theme">
   
   <!-- Default panel contents -->
   <div class="panel-heading"><h3 class="text-center">1. Введение</h3></div>
@@ -45,5 +66,13 @@
     </div>
   </div>
 </div>
+      
+      
+    </div>
+  </main>
+</div>
+
+
+
 
 </body>
