@@ -40,7 +40,7 @@
   -->
   
   <!-- Uses a transparent header that draws on top of the layout's background -->
-<style>
+<!--<style>
 .demo-layout-transparent {
   background: url('https://scontent.xx.fbcdn.net/hphotos-xta1/v/t1.0-9/1384224_653936967970937_131221579_n.jpg?oh=eef37eff2c3de13b7687091145f8886e&oe=56AA1D3D') center / cover;
 }
@@ -51,16 +51,18 @@
   color: white;
 }
 </style>
+-->
 
-<div class="demo-layout-transparent mdl-layout mdl-js-layout">
-  <header class="mdl-layout__header mdl-layout__header--transparent">
+<!-- Always shows a header, even in smaller screens. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
     <div class="mdl-layout__header-row">
       <!-- Title -->
       <span class="mdl-layout-title">Title</span>
       <!-- Add spacer, to align navigation to the right -->
       <div class="mdl-layout-spacer"></div>
-      <!-- Navigation -->
-      <nav class="mdl-navigation">
+      <!-- Navigation. We hide it in small screens. -->
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
         <a class="mdl-navigation__link" href="">Link</a>
         <a class="mdl-navigation__link" href="">Link</a>
         <a class="mdl-navigation__link" href="">Link</a>
@@ -78,6 +80,10 @@
     </nav>
   </div>
   <main class="mdl-layout__content">
+    <div class="page-content"><!-- Your content goes here --></div>
   </main>
+</div>
+  
+  
 </div>
 </body>
