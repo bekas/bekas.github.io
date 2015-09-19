@@ -15,11 +15,18 @@
 .demo-card-wide.mdl-card {
   width: 800px;
 }
-.demo-card-wide > .mdl-card__title {
+#intro.demo-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 176px;
+  background: url('https://s-media-cache-ak0.pinimg.com/736x/41/ac/80/41ac80cd68ead96d07d37c033b72f844.jpg') center / cover;
+}
+
+#server.demo-card-wide > .mdl-card__title {
   color: #fff;
   height: 176px;
   background: url('https://www.supnig.com/media/pictures/nodejs-dark1.jpg') center / cover;
 }
+
 .demo-card-wide > .mdl-card__menu {
   color: #fff;
 }
@@ -65,7 +72,7 @@
 <!-- Wide card with share menu button -->
 
 
-<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+<div id="intro" class="demo-card-wide mdl-card mdl-shadow--2dp">
   <div class="mdl-card__title">
     <h2 class="mdl-card__title-text">Введение</h2>
   </div>
@@ -84,7 +91,7 @@
   </div> -->
 </div>
 
-<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+<div id="server" class="demo-card-wide mdl-card mdl-shadow--2dp">
   <div class="mdl-card__title">
     <h2 class="mdl-card__title-text">Клиент-Сервер в вебе</h2>
   </div>
