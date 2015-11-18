@@ -1,13 +1,94 @@
+<head>
+  
+  <!--
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+  
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  -->
+  <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.indigo-pink.min.css">
+<script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
+  <link rel="stylesheet" href="/css/main.css"/>
+</head>
+<body>
+
+
+  <!--
+  
+  <div >
+  
+    <ul class="nav nav-pills nav-justified menu">
+      <li role="presentation" class="active"><a href="/">Главная</a></li>
+      <li role="presentation"><a href="/html/web.html">Спецкурс по веб-разработке</a></li>
+      <li role="presentation"><a href="/">С</a></li>
+      <li role="presentation"><a href="/">Обо мне</a></li>
+    </ul>
+    
+  <div class="header">
+    <h1>bekas </h1>
+    <small>страница Дениса Бекасова</small>
+  </div>
 <div>
+  </div>
+    
+  </div>
+  
+  -->
+  
+  <!-- Uses a transparent header that draws on top of the layout's background -->
+<!--<style>
+.demo-layout-transparent {
+  background: url('https://scontent.xx.fbcdn.net/hphotos-xta1/v/t1.0-9/1384224_653936967970937_131221579_n.jpg?oh=eef37eff2c3de13b7687091145f8886e&oe=56AA1D3D') center / cover;
+}
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+  /* This background is dark, so we set text to white. Use 87% black instead if
+     your background is light. */
+  color: white;
+}
+</style>
+-->
 
+<!-- Always shows a header, even in smaller screens. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">bekasov</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation. We hide it in small screens. -->
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+        <a class="mdl-navigation__link" href="/">Главная</a>
+        <a class="mdl-navigation__link" href="/html/web.html">Спецкурс по веб-разработке</a>
+        <a class="mdl-navigation__link" href="/html/c.html">С</a>
+        <a class="mdl-navigation__link" href="/html/about.html">Обо мне</a>
+      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">bekasov</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="/">Главная</a>
+      <a class="mdl-navigation__link" href="/html/web.html">Спецкурс по веб-разработке</a>
+      <a class="mdl-navigation__link" href="/html/c.html">С</a>
+      <a class="mdl-navigation__link" href="/html/about.html">Обо мне</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+    <div>
+<h2> Лабораторные работы. </h2>
+<strong>Внимание! Варианты могут не совпадать, т.к. я не все фиксировал. Если вариант не совпал, делайте тот, который записали на паре.</strong>
 1.1. Есть заданная прямая, вводится точка, определить где она - над или под прямой.
 1.2. Есть заданный треугольник, вводится точка, надо определить где она - внутри, снаружи, или на сторонах
-1+ Определить, в каком секторе треугольника находтся точка
+1.3. Определить, в каком секторе треугольника находтся точка
 
 2.1. Вывести на экран таблицу значений функции для введенного интервала и шага с помощью цикла for
 2.2. - | - с помощью цикла while и do-while.
-0 вар. (sin(x)*sin(x))/2
+Варианты уже не помню, какие давал :) Пусть будут такие.
 1 вар. x*ctg(x)*ctg(x)
 2 вар. cos(x*x*x)/sqrt(x)
 
@@ -37,30 +118,36 @@
 3 вар. В центральный элемент матрицы записать разницу между суммой элементов в верхнем и нижнем треугольнике, образованными лиагоналями (Х)
 4 вар. Удалить строку с минимальным элементом под главной диагональю
 
-7.1. Вводится строка. Удалить все лишние пробелы.
-7.2. Задается массив строк. Каждая строка включает в себя Фамилию Имя Отчество.
+7.1.-7.2. Вводится матрица. Остортировать матрицу змейкой
+0 вар. змейка горизонтальная
+1 вар. змейка диагональная слева-сверху
+2 вар. змейка вертикальная
+3 вар. змейка диагональная справа-сверху
+* вар. змейка от центра
+
+8.1. Вводится строка. Удалить все лишние пробелы.
+8.2. Задается массив строк. Каждая строка включает в себя Фамилию Имя Отчество.
 Задается две строки (суффиксы) (например, "ov" "idze" или "chuk" "ko") suf1 и suf2. Заменяем все вхождения suf1 в фамилию на suf2.
-Прим. в данной работе не пользоваться библиотечными функциями string.h.Все необходимые функции реалищовывать вручную.
+Прим. в данной работе не пользоваться библиотечными функциями string.h.Все необходимые функции реализовывать вручную.
 
-8.1. Вводится текст. Составить частотный словарь слов в тексте. Слова в словаре не должны повторятся. Выводить вертикальным списокм, слева - слово, справа - кол-во повторений.
-8.2. Вводится текст. Вводится ширина. Отформатировать текст по ширине. Слова не разбивать, а пренеосить на новую строку целиком. Недостающее пространство заполнять пробелами.
+9.1. Вводится текст. Составить частотный словарь слов в тексте. Слова в словаре не должны повторятся. Выводить вертикальным списокм, слева - слово, справа - кол-во повторений.
+9.2. Вводится текст. Вводится ширина. Отформатировать текст по ширине. Слова не разбивать, а пренеосить на новую строку целиком. Недостающее пространство заполнять пробелами.
 
-9.1.-9.2.
+10.1.
 Вводится массив структур Student. У каждого студента есть, как минимум, имя и массив из 5 оценок.
 Необходимо сгруппировать массив по 4 группам: отличники (все 5), хорошисты (хотя бы одна 4),троечники(хотя бы одна 3) и двоечники(хотя бы одна 2).
 В каждой группе - отсортировать студентов по алфавиту.
+10.2.
 Удалить всех, у кого больше двух 2-к.
-9+ Для каждого студента вывести его средний балл.
+Для каждого студента вывести его средний балл.
 
-10.1.-10.2. Тектовые файлы.
+11.1.-11.2. Тектовые файлы.
 Структуры
 const int len = 255;
 struct Book
 {
   char Name[len];
   char Author[len];
-  char Genre[len];
-  int Year;
   int PageCount;
   int Rank;
 };
@@ -68,8 +155,6 @@ struct Music
 {
   char Name[len];
   char Artist[len];
-  char Album[len];
-  char Genre[len];  
   int Duration;
   int Rank;
 };
@@ -77,8 +162,6 @@ struct Cinema
 {
   char Name[len];
   char Director[len];
-  char Genre[len]
-  int Year;
   int Duration;
   int Rank;
 };
@@ -92,11 +175,20 @@ struct Cinema
 Для каждого действия открывать/закрывать файл с необходимыми флагами.
 
 Варианты:
-0 - Book.Удаление по любому строковому полю (на выбор), сортировка по любому целочисленному полю (на выбор)
-0 - Book.Удаление по любому целочисленному полю (на выбор), сортировка по любому строковому полю (на выбор)
-0 - Music.Удаление по любому строковому полю (на выбор), сортировка по любому целочисленному полю (на выбор)
-0 - Music.Удаление по любому целочисленному полю (на выбор), сортировка по любому строковому полю (на выбор)
-0 - Cinema.Удаление по любому строковому полю (на выбор), сортировка по любому целочисленному полю (на выбор)
-0 - Cinema.Удаление по любому целочисленному полю (на выбор), сортировка по любому строковому полю (на выбор)
+0 - Book.Удаление по автору, сортировка по ранку и названию 
+1 - Music.Удаление по исполнителю, сортировка по ранку и названию
+2 - Cinema.Удаление по режисеру, сортировка по ранку и названию
 
 </div>
+  
+  
+  </main>
+</div>
+  
+  
+</div>
+</body>
+
+
+
+
